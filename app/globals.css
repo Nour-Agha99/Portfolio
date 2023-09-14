@@ -7,6 +7,10 @@
   line-height: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -19,7 +23,7 @@ body {
   @apply fixed w-full duration-500 flex justify-between  font-medium mx-auto max-w-2xl lg:max-w-5xl left-1/2 transform -translate-x-1/2;
 }
 .static_nav {
-  @apply fixed w-full duration-500 flex md:hidden font-medium mx-auto max-w-2xl lg:max-w-5xl left-1/2 transform -translate-x-1/2;
+  @apply fixed w-full duration-1000 flex md:hidden font-medium mx-auto max-w-2xl lg:max-w-5xl left-1/2 transform -translate-x-1/2;
 }
 
 .link-nav {

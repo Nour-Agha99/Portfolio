@@ -5,14 +5,15 @@ import Link from "next/link";
 import { useState } from "react";
 
 const BottomBar = () => {
+  const weird = ['translate-x-0','translate-x-16','translate-x-32']
   const [active, setActive] = useState(0);
 
   return (
-    <header className={`static_nav bottom-0 justify-center`}>
+    <header className={`static_nav bottom-0 justify-center z-50`}>
       <div className="max-h-[4.4rem] px-6 rounded-t-2xl text-sm font-medium shadow-lg ring-dark-b1 ring-1  backdrop-blur bg-dark-bg5 box-content">
         <ul className="flex relative">
           <span
-            className={`bg-dark-1 duration-500 ${Menus[active].dis} border-4 border-gray-900 h-16 w-16 absolute
+            className={`bg-dark-1 duration-500 ${Menus[active].dis} translate-x-16 border-4 border-gray-900 h-16 w-16 absolute
          -top-5 rounded-full`}
           >
             <span

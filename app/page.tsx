@@ -88,7 +88,7 @@ export default function Home() {
         <section className="md:my-16 my-8  relative sm:h-[350px] h-[240px] ">
           <div className="my-4 px-16 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8 absolute top-0 left-1/2 transform -translate-x-1/2">
             <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2  md:block hidden">
-              <div className="p-[2px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-zinc-500 dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
+              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
                 <Image
                   width={288}
                   height={288}
@@ -99,7 +99,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2">
-              <div className="p-[2px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-zinc-500 dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
+              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
                 <Image
                   width={288}
                   height={288}
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-[-2deg]">
-              <div className="p-[2px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-zinc-500 dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
+              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
                 <Image
                   width={288}
                   height={288}
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-[-2deg] md:block hidden">
-              <div className="p-[2px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-zinc-500 dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
+              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
                 <Image
                   width={288}
                   height={288}
@@ -203,7 +203,7 @@ export default function Home() {
                   </article>
                   <div className="relative w-full text-center">
                     <div className="absolute top-[50%] translate-y-[-50%] w-full h-[1px] bg-slate-600/30"></div>
-                    <div className="relative z-10 order-first inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 flex-none mb-4">
+                    <div className="relative z-10 inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-teal-300 bg-white dark:bg-slate-800 transition ease-in-out duration-150 cursor-not-allowed ring-1 ring-slate-900/10 dark:ring-slate-200/20">
                       Projects
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export default function Home() {
                     <article className="group relative flex flex-col items-start">
                       <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                         <div className="absolute -inset-x-4 -inset-y-6 z-0 bg-zinc-50 transition scale-100 opacity-100 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                        <Link href="/project">
+                        <Link href={`/projects#${project.name}`}>
                           <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                           <span className="relative z-10">{project.name}</span>
                         </Link>

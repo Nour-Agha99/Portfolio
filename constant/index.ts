@@ -1,11 +1,6 @@
 const Menus = [
-  { name: "about", icon: "/nLogo.png", dis: "translate-x-0", path: "/about" },
-  {
-    name: "articles",
-    icon: "/nLogo.png",
-    dis: "translate-x-16",
-    path: "/articles",
-  },
+  { name: "home", icon: "/nLogo.png", dis: "translate-x-0", path: "/" },
+  { name: "about", icon: "/nLogo.png", dis: "translate-x-16", path: "/about" },
   {
     name: "projects",
     icon: "/nLogo.png",
@@ -29,7 +24,7 @@ const Projects = [
     linkUrl: "https://threads-drab-iota.vercel.app/",
     linkName: "Threads Clone",
     time: "August 15, 2023",
-    languages: ["nextjs", "tailwind", "mongodb",,"nodejs",'js','expressjs','react'],
+    languages: ["nextjs", "tailwind", "mongodb",],
   },
   {
     name: "ToDo App",

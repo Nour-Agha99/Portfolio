@@ -16,7 +16,7 @@ const TopBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos) {
+      if (prevScrollPos > currentScrollPos -10) {
         setTop("20px");
       } else {
         setTop("-150px");
@@ -37,13 +37,20 @@ const TopBar = () => {
       style={{ top: `${top}` }}
     >
       <Link href={"/"}>
-        <div className="h-10 w-10 rounded-full p-0.5 shadow-lg bg-zinc-700 shadow-zinc-800/5 ring-1 backdrop-blur dark:bg-zinc-800/90 ring-white/10">
+        <div className="rounded-full p-0.5">
           <Image
-            src="/nLogo.svg"
+            src="/logo-light.svg"
             alt="logo"
             width={100}
-            height={100}
-            className="aspect-square"
+            height={50}
+            className="h-10 aspect-auto dark:hidden"
+          />
+          <Image
+            src="/logo-dark.svg"
+            alt="logo"
+            width={100}
+            height={50}
+            className="h-10 aspect-auto hidden dark:block"
           />
         </div>
       </Link>
@@ -76,7 +83,8 @@ const TopBar = () => {
         <button
           type="button"
           aria-label="Switch to light theme"
-          className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+          className="dark:hidden group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+          onClick={() => setTheme("dark")}
         >
           <svg
             viewBox="0 0 24 24"
@@ -84,8 +92,7 @@ const TopBar = () => {
             stroke-linecap="round"
             stroke-linejoin="round"
             aria-hidden="true"
-            className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"
-            onClick={() => setTheme("dark")}
+            className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"
           >
             <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z"></path>
             <path
@@ -93,11 +100,18 @@ const TopBar = () => {
               fill="none"
             ></path>
           </svg>
+          
+        </button>
+        <button
+          type="button"
+          aria-label="Switch to light theme"
+          className="dark:block hidden group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+          onClick={() => setTheme("light")}
+        >
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
             className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
-            onClick={() => setTheme("light")}
           >
             <path
               d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"

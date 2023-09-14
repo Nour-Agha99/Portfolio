@@ -25,7 +25,7 @@ const page = () => {
         >
           {Projects.map((project) => (
             <li className="group relative flex flex-col items-start">
-              <div className="relative z-10 flex items-center justify-center p-2 rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <div id={project.name} className="relative z-10 flex items-center justify-center p-2 rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   alt={project.name}
                   loading="lazy"

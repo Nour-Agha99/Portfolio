@@ -5,6 +5,7 @@ import "./globals.css";
 import TopBar from "@/components/TopBar";
 import BottomBar from "@/components/BottomBar";
 import Footer from "@/components/Footer";
+import ScrollUp from "@/components/ScrollUp";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -26,6 +27,7 @@ export default function RootLayout({
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <TopBar />
                 {children}
+                <ScrollUp />
                 <Footer />
                 <BottomBar />
               </div>
