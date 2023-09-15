@@ -2,7 +2,6 @@
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import TopBar from "@/components/TopBar";
-import BottomBar from "@/components/BottomBar";
 import Footer from "@/components/Footer";
 import ScrollUp from "@/components/ScrollUp";
 import Metadata from "@/components/MetaData";
@@ -26,7 +25,6 @@ export default function RootLayout({
                 {children}
                 <ScrollUp />
                 <Footer />
-                <BottomBar />
               </div>
             </div>
           </div>
