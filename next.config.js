@@ -5,9 +5,10 @@ const nextConfig = {
     },
     images: {
       remotePatterns: [
+
         {
           protocol: "https",
-          hostname: "placeholder.co",
+          hostname: "placehold.co",
         },
       ],
       typescript: {
