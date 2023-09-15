@@ -1,10 +1,10 @@
 const Menus = [
   { name: "home", icon: "/nLogo.png", dis: "translate-x-0", path: "/" },
-  { name: "about", icon: "/nLogo.png", dis: "translate-x-16", path: "/about" },
+  // { name: "about", icon: "/nLogo.png", dis: "translate-x-16", path: "/about" },
   {
     name: "projects",
     icon: "/nLogo.png",
-    dis: "translate-x-32",
+    dis: "translate-x-16",
     path: "/projects",
   },
 ];

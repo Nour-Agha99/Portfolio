@@ -13,7 +13,7 @@ const BottomBar = () => {
       <div className="max-h-[4.4rem] px-6 rounded-t-2xl text-sm font-medium shadow-lg ring-dark-b1 ring-1  backdrop-blur bg-dark-bg5 box-content">
         <ul className="flex relative">
           <span
-            className={`bg-dark-1 duration-500 ${Menus[active].dis} translate-x-16 border-4 border-gray-900 h-16 w-16 absolute
+            className={`bg-zinc-800 duration-500 ${Menus[active].dis} translate-x-16 border-4 border-gray-900 h-16 w-16 absolute
          -top-5 rounded-full`}
           >
             <span
@@ -29,7 +29,7 @@ const BottomBar = () => {
             <li key={i} className="w-16">
               <Link
                 href={menu.path}
-                className="flex flex-col text-center pt-6 hover:text-dark-1 text-dark-2"
+                className="flex flex-col text-center pt-6 hover:text-zinc-800 text-dark-2"
                 onClick={() => setActive(i)}
               >
                 <span
