@@ -1,3 +1,4 @@
+const Works = [{ image: "/head-2.png", style: "rotate-[-2px] hidden md:block" },{ image: "/holool.png", style: "rotate-[-2px]" },{ image: "/todo.png", style: "rotate-[2px]" },{ image: "/thread.png", style: "rotate-[2px] hidden md:block" }];
 const Menus = [
   { name: "home", icon: "/nLogo.png", dis: "translate-x-0", path: "/" },
   // { name: "about", icon: "/nLogo.png", dis: "translate-x-16", path: "/about" },
@@ -24,7 +25,7 @@ const Projects = [
     linkUrl: "https://threads-drab-iota.vercel.app/",
     linkName: "Threads Clone",
     time: "August 15, 2023",
-    languages: ["nextjs", "tailwind", "mongodb",],
+    languages: ["nextjs", "tailwind", "mongodb"],
   },
   {
     name: "ToDo App",
@@ -32,7 +33,7 @@ const Projects = [
     linkUrl: "https://nour-agha99.github.io/ToDoApp-ReactJs/",
     linkName: "ToDoApp",
     time: "May 5, 2023",
-    languages: ["react.js","css"],
+    languages: ["react.js", "css"],
   },
   {
     name: "Head Phone",
@@ -51,4 +52,4 @@ const Projects = [
     languages: ["html", "css", "js"],
   },
 ];
-export { Menus, Projects };
+export { Works, Menus, Projects };

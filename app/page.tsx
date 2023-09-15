@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Lang from "@/components/Lang";
-import { Menus, Projects } from "@/constant";
+import { Menus, Projects, Works } from "@/constant";
+const weird = ['rotate-[-2px]','rotate-[2px]']
 
 export default function Home() {
   return (
@@ -86,51 +87,24 @@ export default function Home() {
           </div>
         </section>
         <section className="md:my-16 my-8  relative sm:h-[350px] h-[240px] ">
-          <div className="my-4 px-16 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8 absolute top-0 left-1/2 transform -translate-x-1/2">
-            <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2  md:block hidden">
-              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
-                <Image
-                  width={288}
-                  height={288}
-                  src={"/head-2.png"}
-                  alt="my-work"
-                  className="z-20 relative rounded-xl"
-                />
-              </div>
-            </div>
-            <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2">
-              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
-                <Image
-                  width={288}
-                  height={288}
-                  src={"/holool.png"}
-                  alt="my-work"
-                  className="z-20 relative rounded-xl"
-                />
-              </div>
-            </div>
-            <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-[-2deg]">
-              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
-                <Image
-                  width={288}
-                  height={288}
-                  src={"/todo.png"}
-                  alt="my-work"
-                  className="z-20 relative rounded-xl"
-                />
-              </div>
-            </div>
-            <div className="relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-[-2deg] md:block hidden">
-              <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
-                <Image
-                  width={288}
-                  height={288}
-                  src={"/thread.png"}
-                  alt="my-work"
-                  className="z-20 relative rounded-xl"
-                />
-              </div>
-            </div>
+          <div
+            className='my-4 px-16 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8 absolute top-0 left-1/2 transform -translate-x-1/2'
+          >
+            {Works.map((work) => (
+              <>
+                <div className={`relative h-full w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2  ${work.style}`}>
+                  <div className="p-[3px] h-full w-full before:content-[' '] before:absolute before:w-[100px] before:bg-[#145da0] dark:before:bg-cyan-500 before:top-[50%] before:left-[50%] before:h-[500px] before:z-10 animation after:content-[' '] after:absolute after:inset-[-1px] after:rounded-2xl after:bg-zinc-400 dark:after:bg-zinc-800">
+                    <Image
+                      width={288}
+                      height={288}
+                      src={work.image}
+                      alt="my-work"
+                      className="z-20 relative rounded-xl"
+                    />
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
         </section>
         <section>
