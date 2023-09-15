@@ -40,7 +40,7 @@ export default function Home() {
                   <Link
                     className="group -m-1 p-1"
                     aria-label="Follow on Instagram"
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/nour_elagha/"
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ export default function Home() {
                   <Link
                     className="group -m-1 p-1"
                     aria-label="Follow on GitHub"
-                    href="https://github.com"
+                    href="https://github.com/Nour-Agha99"
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ export default function Home() {
                   <Link
                     className="group -m-1 p-1"
                     aria-label="Follow on LinkedIn"
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/Nour-Agha99"
                   >
                     <svg
                       viewBox="0 0 24 24"

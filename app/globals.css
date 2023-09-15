@@ -22,9 +22,6 @@ body {
 .sticky_nav {
   @apply fixed w-full duration-500 flex justify-between  font-medium mx-auto max-w-2xl lg:max-w-5xl left-1/2 transform -translate-x-1/2;
 }
-.static_nav {
-  @apply fixed w-full duration-1000 flex md:hidden font-medium mx-auto max-w-2xl lg:max-w-5xl left-1/2 transform -translate-x-1/2;
-}
 
 .link-nav {
   @apply relative block h-6 md:px-3 py-2 box-content;

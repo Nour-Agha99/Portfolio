@@ -1,10 +1,10 @@
 const Works = [{ image: "/head-2.png", style: "rotate-[-2px] hidden md:block" },{ image: "/holool.png", style: "rotate-[-2px]" },{ image: "/todo.png", style: "rotate-[2px]" },{ image: "/thread.png", style: "rotate-[2px] hidden md:block" }];
 const Menus = [
-  { name: "home", icon: "/nLogo.png", dis: "translate-x-0", path: "/" },
+  { name: "home", icon: "/home.svg", dis: "translate-x-0", path: "/" },
   // { name: "about", icon: "/nLogo.png", dis: "translate-x-16", path: "/about" },
   {
     name: "projects",
-    icon: "/nLogo.png",
+    icon: "/projects.svg",
     dis: "translate-x-16",
     path: "/projects",
   },
